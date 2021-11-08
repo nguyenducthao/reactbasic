@@ -9,11 +9,12 @@ class ChildComponent extends React.Component {
         })
     }
     render() {
-        let { name, age, arrayJobs } = this.props;
+        // let { name, age, arrayJobs } = this.props;
+        let { arrayJobs } = this.props;
         let { showJobs } = this.state;
         return (
             <>
-                <div>Child component name: {name}, age: {age}</div>
+                {/* <div>Child component name: {name}, age: {age}</div> */}
                 {!showJobs ?
                     <div><button onClick={() => this.handleShowHide()}>Show jobs list</button></div>
                     :
